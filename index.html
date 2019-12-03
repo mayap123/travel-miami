@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title> Miami Travel Guide </title>
+
+	<link href="https://fonts.googleapis.com/css?family=Cardo|Poppins&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="">
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+  <header>
+
+  <h1 class="center">A Local's Miami Travel Guide</h1>
+
+</header>
+
+<article>
+
+<section class="blurb">
+
+  <p>Welcome to Miami!</p>
+  <p>¡Bienvenidos a Miami!</p>
+
+  <p>Select a category to receive recommendations of places to visit in Miami.</p>
+
+</section>
+
+<div class="buttoncateg">
+<button type="button" id="outdoors">Outdoors</button>
+
+
+<button type="button" id="art">Art/Music</button>
+
+
+<button type="button" id="historical">Historical</button>
+
+
+<button type="button" id="nightlife">Nightlife</button>
+
+
+<button type="button" id="kids">Fun for Kids</button>
+
+
+<button type="button" id="shopping">Shopping</button>
+</div>
+
+  <!--map 1 -->
+  <div class="container">
+
+  <p class="clickmarker">Click on a map marker to receive more information about that location.</p>
+
+  <div class="hidemap" id="mapOne"></div>
+
+
+  <div class="content" id="contentOne"></div>
+
+
+  </div>
+
+  <!--map 2 -->
+
+  <div class="container">
+
+  <div class="hidemap" id="mapTwo"></div>
+
+  <div class="content" id="contentTwo"></div>
+
+
+  </div>
+
+  <!--map 3 -->
+
+  <div class="container">
+
+  <div class="hidemap" id="mapThree"></div>
+
+  <div class="content" id="contentThree"></div>
+
+
+  </div>
+
+  <!--map 4 -->
+
+  <div class="container">
+
+  <div class="hidemap" id="mapFour"></div>
+
+  <div class="content" id="contentFour"></div>
+
+  </div>
+
+<!--map 5 -->
+
+
+  <div class="container">
+
+  <div class="hidemap" id="mapFive"></div>
+
+  <div class="content" id="contentFive"></div>
+
+  </div>
+
+  <!--map 6 -->
+
+  <div class="container">
+
+  <div class="hidemap" id="mapSix"></div>
+
+  <div class="content" id="contentSix"></div>
+
+  </div>
+
+
+
+</article>
+
+<footer>
+<p>This page was created by Maya Punjwani.</p>
+<p>View it on <a href="https://github.com/mayap123/travel-miami">GitHub</a>.</p>
+<p>Click here to see sources</p>
+</footer>
+
+
+  <!-- add the SCRIPT elements BELOW this comment -->
+
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+    crossorigin=""></script>
+
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

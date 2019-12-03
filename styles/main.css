@@ -1,0 +1,171 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+
+ body {
+    background: #a8f6f8;
+    color: #000;
+    font-family: 'Cardo', 'Palatino', 'Georgia', serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Poppins', 'Verdana', 'Tahoma', sans-serif;
+}
+
+header {
+  background: #f98dc9;
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+article {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  max-width: 600px;
+}
+
+section.blurb {
+  background: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+button:hover{
+  background-color: #ffb6c1;
+  color: #fff;
+}
+
+button:focus{
+  background-color: #add8e6;
+}
+
+.container {
+  margin: auto;
+  max-width: 700px;
+}
+
+.clickmarker {
+  margin-top: 2rem;
+}
+
+#mapOne {
+height: 400px;
+width: 500px;
+margin: 2rem 0 3rem 0;
+border: 1px solid #999;
+}
+
+#contentOne {
+  width: 300px;
+  background: #99cccc;
+  padding: .2rem 1rem;
+  margin-bottom: .5rem;
+}
+
+#mapTwo {
+height: 400px;
+width: 500px;
+margin: 2rem 0 3rem 0;
+border: 1px solid #999;
+}
+
+#contentTwo {
+  width: 300px;
+  background: #99cccc;
+  padding: .2rem 1rem;
+  margin-bottom: .5rem;
+}
+
+#mapThree {
+height: 400px;
+width: 500px;
+margin: 2rem 0 3rem 0;
+border: 1px solid #999;
+}
+
+#mapFour {
+height: 400px;
+width: 500px;
+margin: 2rem 0 3rem 0;
+border: 1px solid #999;
+}
+
+#mapFive {
+height: 400px;
+width: 500px;
+margin: 2rem 0 3rem 0;
+border: 1px solid #999;
+}
+
+#mapSix {
+height: 400px;
+width: 500px;
+margin: 2rem 0 3rem 0;
+border: 1px solid #999;
+}
+
+.center {
+  text-align: center;
+}
+
+p {
+    line-height: 1.5;
+}
+
+footer {
+  background: #f98dc9;
+  color: #000;
+  text-align: center;
+  padding: .5rem;
+  margin: 3rem 0 0 0;
+
+}
+
+/* a {
+    color: #0000E0;
+}
+
+a:hover {
+    color: #551A8B;
+} */
+
+footer a {
+    color: #00008A;
+}
+
+footer a:hover {
+    color: #330F52;
+}
+
+/* @media screen and (max-width: 700px) {
+
+    #mainpic {
+      height: 500px;
+    }
+
+    p {
+        padding: 1rem;
+    }
+
+} */
