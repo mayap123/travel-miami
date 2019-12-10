@@ -11,11 +11,13 @@ html {
     color: #000;
     font-family: 'Cardo', 'Palatino', 'Georgia', serif;
     margin: 0;
+
 }
 
 h1 {
     font-family: 'Poppins', 'Verdana', 'Tahoma', sans-serif;
 }
+
 
 header {
   background: #f98dc9;
@@ -32,16 +34,22 @@ article {
 }
 
 section {
-  max-width: 600px;
+  max-width: 800px;
 }
 
 section.blurb {
   background: #fff;
   color: #000;
   padding: 1rem 2rem;
-  font-size: 1rem;
+  font-size: 120%;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.carousel {
+  width:600px;
+  height:400px;
+  margin: auto;
 }
 
 button {
@@ -60,6 +68,14 @@ button:focus{
   background-color: #add8e6;
 }
 
+.buttoncateg {
+  text-align: center;
+}
+
+.categTwo {
+  padding-top: 1rem;
+}
+
 .container {
   margin: auto;
   max-width: 700px;
@@ -70,63 +86,56 @@ button:focus{
 }
 
 #mapOne {
-height: 400px;
-width: 500px;
+height: 500px;
+width: 700px;
 margin: 2rem 0 3rem 0;
 border: 1px solid #999;
-}
-
-#contentOne {
-  width: 300px;
-  background: #99cccc;
-  padding: .2rem 1rem;
-  margin-bottom: .5rem;
+font-size: 100%;
 }
 
 #mapTwo {
-height: 400px;
-width: 500px;
+height: 500px;
+width: 700px;
 margin: 2rem 0 3rem 0;
 border: 1px solid #999;
-}
-
-#contentTwo {
-  width: 300px;
-  background: #99cccc;
-  padding: .2rem 1rem;
-  margin-bottom: .5rem;
+font-size: 100%;
 }
 
 #mapThree {
-height: 400px;
-width: 500px;
+height: 500px;
+width: 700px;
 margin: 2rem 0 3rem 0;
 border: 1px solid #999;
+font-size: 100%;
 }
 
 #mapFour {
-height: 400px;
-width: 500px;
+height: 500px;
+width: 700px;
 margin: 2rem 0 3rem 0;
 border: 1px solid #999;
+font-size: 100%;
 }
 
 #mapFive {
-height: 400px;
-width: 500px;
+height: 500px;
+width: 700px;
 margin: 2rem 0 3rem 0;
 border: 1px solid #999;
+font-size: 100%;
 }
 
 #mapSix {
-height: 400px;
-width: 500px;
+height: 500px;
+width: 700px;
 margin: 2rem 0 3rem 0;
 border: 1px solid #999;
+font-size: 100%;
 }
 
 .center {
   text-align: center;
+  padding-top: 1rem;
 }
 
 p {
@@ -139,33 +148,36 @@ footer {
   text-align: center;
   padding: .5rem;
   margin: 3rem 0 0 0;
+  font-size: 120%;
 
 }
 
-/* a {
-    color: #0000E0;
-}
-
-a:hover {
-    color: #551A8B;
-} */
-
-footer a {
+ a {
     color: #00008A;
 }
 
-footer a:hover {
+a:hover {
     color: #330F52;
 }
 
-/* @media screen and (max-width: 700px) {
+.bib {
+  color: #000;
+  font-weight: bold;
+}
 
-    #mainpic {
-      height: 500px;
+@media screen and (max-width: 700px) {
+
+    #mapOne, #mapTwo, #mapThree, #mapFour, #mapFive, #mapSix {
+      width: 100%;
     }
 
-    p {
-        padding: 1rem;
+    section {
+      max-width: 100%;
     }
 
-} */
+  .carousel {
+    max-width: 100%;
+    height: 200px;
+  }
+  
+}

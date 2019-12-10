@@ -7,6 +7,9 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Cardo|Poppins&display=swap" rel="stylesheet">
 
+<!--bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin="">
@@ -26,12 +29,41 @@
 
 <section class="blurb">
 
-  <p>Welcome to Miami!</p>
-  <p>¡Bienvenidos a Miami!</p>
+  <p class="center">Welcome to Miami!</p>
+  <p class="center">¡Bienvenidos a Miami!</p>
 
-  <p>Select a category to receive recommendations of places to visit in Miami.</p>
+
+<!--Bootstrap Carousel https://getbootstrap.com/docs/4.0/components/carousel/ -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/largerimages/bluebeach.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/largerimages/wynwoodmural.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/largerimages/oceandrivenight.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/largerimages/designdistrict.jpg" alt="Fourth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<p class="center">Select a category below to receive recommendations of where you should visit in Miami. Click on a map marker for more information.</p>
 
 </section>
+
 
 <div class="buttoncateg">
 <button type="button" id="outdoors">Outdoors</button>
@@ -42,7 +74,7 @@
 
 <button type="button" id="historical">Historical</button>
 
-
+<div class="categTwo">
 <button type="button" id="nightlife">Nightlife</button>
 
 
@@ -52,15 +84,13 @@
 <button type="button" id="shopping">Shopping</button>
 </div>
 
+</div>
+
   <!--map 1 -->
   <div class="container">
 
-  <p class="clickmarker">Click on a map marker to receive more information about that location.</p>
 
   <div class="hidemap" id="mapOne"></div>
-
-
-  <div class="content" id="contentOne"></div>
 
 
   </div>
@@ -71,8 +101,6 @@
 
   <div class="hidemap" id="mapTwo"></div>
 
-  <div class="content" id="contentTwo"></div>
-
 
   </div>
 
@@ -81,8 +109,6 @@
   <div class="container">
 
   <div class="hidemap" id="mapThree"></div>
-
-  <div class="content" id="contentThree"></div>
 
 
   </div>
@@ -93,18 +119,14 @@
 
   <div class="hidemap" id="mapFour"></div>
 
-  <div class="content" id="contentFour"></div>
-
   </div>
 
 <!--map 5 -->
-
 
   <div class="container">
 
   <div class="hidemap" id="mapFive"></div>
 
-  <div class="content" id="contentFive"></div>
 
   </div>
 
@@ -113,8 +135,6 @@
   <div class="container">
 
   <div class="hidemap" id="mapSix"></div>
-
-  <div class="content" id="contentSix"></div>
 
   </div>
 
@@ -125,7 +145,52 @@
 <footer>
 <p>This page was created by Maya Punjwani.</p>
 <p>View it on <a href="https://github.com/mayap123/travel-miami">GitHub</a>.</p>
-<p>Click here to see sources</p>
+<p class="bib">Click here to see sources for images.</p>
+
+<div id="bib-text">
+      <p>Larger Images: Kelly Russo on <a href="https://unsplash.com/photos/tCDPQNaJXpM">Unsplash</a>, Bruce Warrington on <a href="https://unsplash.com/photos/wTRP7B16K9Y">Unsplash</a>
+      </p>
+      <p> Flickr: <a href="https://www.flickr.com/photos/wyntuition/2819847969">Wyn Van Devanter[CC BY-SA 2.0]</a>, <a href="https://www.flickr.com/photos/lulek/40701394564">Maciek Lulko[CC BY-NC 2.0]</a>
+      </p>
+
+      <p> Outdoors: Flickr: <a href="https://www.flickr.com/photos/51513413@N02/5474655702/">Olf:P [CC BY-NC-SA 2.0]</a>, <a href="https://www.flickr.com/photos/juggernautco/17429332663 ">Daniel X. O’Neil [CC BY 2.0]</a>
+      </p>
+      <p>Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Strand_Miami_Beach_Florida.jpg">Herbert wie [CC BY-SA 4.0]</a>, <a href="https://commons.wikimedia.org/wiki/File:Miami_FL_Virginia_Key_Beach_Park04.jpg">Ebyabe [CC BY-SA 3.0]</a>, </p>
+        <p><a href="https://commons.wikimedia.org/wiki/File:Crandon_Park_Modified.jpg">Paulkondratuk3194[CC BY-SA 3.0]</a>
+      </p>
+
+      <p>Art/Music: Karl Bewick on <a href="https://unsplash.com/photos/PQ5VBqPqVy4">Unsplash</a>, Flickr: <a href="https://www.flickr.com/photos/lulek/38845579770">Maciek Lulko [CC BY-NC 2.0]</a></p>
+      <p><a href="https://www.flickr.com/photos/wallyg/6693179381">Wally Gobetz [CC BY-NC-ND 2.0]</a>, <a href="https://www.flickr.com/photos/duncan/42354351322/">duncan c [CC BY-NC 2.0]</a>
+      </p>
+      <p>Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Miami_Beach_FL_Fillmore_Theater01.jpg">Ebyabe [CC BY-SA 3.0]</a></p>
+
+      <p>Historical: Flickr: <a href="https://www.flickr.com/photos/andygippetti/30595875696/in/photostream/">Andy Gippetti [CC BY-NC 2.0]</a>, <a href="https://www.flickr.com/photos/southbeachcars/33723902103">Phillip Pessar [CC BY 2.0]</a>
+      </p>
+
+      <p><a href="https://www.flickr.com/photos/wallyg/6565709529">Wally Gobetz [CC BY-NC-ND 2.0]</a></p>
+
+      <p>Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:The_Barnacle_Historic_State_Park_sign_02.jpg">Leonard J. DeFrancisci [CC BY-SA 3.0]</a>, <a href="https://commons.wikimedia.org/wiki/File:Little_Haiti_south.jpg">Averette [CC BY 3.0]</a></p>
+
+      <p>Nightlife: Flickr: <a href="https://www.flickr.com/photos/gogobot/5554164364">Gogobot Inc.[CC BY-NC 2.0]</a>, <a href="https://www.flickr.com/photos/xavierito/40299693814">Angel Xavier Viera-Vargas[CC BY-ND 2.0]</a></p>
+      <p><a href="https://www.flickr.com/photos/timsnell/29541324214">Tim Snell[CC BY-ND 2.0]</a>, <a href="https://www.flickr.com/photos/15427108@N05/16184162888/">Terry Hassan[ [CC BY-NC-SA 2.0]</a>
+      </p>
+
+      <p>Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Downtown_Miami_night_north_20080514.jpg">Averette[CC BY 3.0]</a></p>
+
+      <p>Kids: Flickr: <a href="https://www.flickr.com/photos/leonardodasilva/5540493807">Leonardo Dasilva[CC BY 2.0]</a>, <a href="https://www.flickr.com/photos/gocardusa/2103195475">Smart Destinations[CC BY-SA 2.0]</a></p>
+      <p><a href="https://www.flickr.com/photos/socialbedia/2432649418">socialBedia[CC BY-NC-ND 2.0]</a>
+      </p>
+
+      <p>Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Jungle_Island_Cassowary.jpg">Maxitup16 [CC BY-SA 3.0]</a>, <a href="https://commons.wikimedia.org/wiki/File:ZooMiamiAugust2010.jpg">Alexf [CC BY-SA 3.0]</a></p>
+
+      <p>Shopping: Ussama Azam on <a href="https://unsplash.com/photos/prhOCABr1ZY">Unsplash</a>, Flickr: <a href="https://www.flickr.com/photos/lulek/40701393594">Maciek Lulko[CC BY-NC 2.0]</a>
+      </p>
+      <p> <a href="https://www.flickr.com/photos/southbeachcars/43105364662">Phillip Pessar [CC BY 2.0]</a></p>
+      <p> Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Miami_Beach_-_South_Beach_-_Lincoln_Road_Mall_and_Pennsylvania_Avenue_01.jpg">Daniel Di Palma [CC BY-SA 4.0]</a>, <a href="https://commons.wikimedia.org/wiki/File:Dolce_%26_Gabbana_Bal_Harbour.jpg">Phillip Pessar [CC BY 2.0]</a>
+      </p>
+
+  </div>
+
 </footer>
 
 
@@ -135,6 +200,13 @@
     crossorigin=""></script>
 
 <script src="scripts/main.js"></script>
+
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
